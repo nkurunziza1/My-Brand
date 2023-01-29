@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/froala-editor@latest/css/froala_editor.pkgd.min.css" rel="stylesheet" type="text/css" />
+    <style>
+        body{
+            background: #043458f7;
+        }
+        input{
+           padding: 10px;
+           width: 70%;
+           display: flex;
+           background: rgb(103, 101, 101);
+           color: rgb(3, 2, 2);
+           text-transform: capitalize;
+           border:none;
+           border-radius: 4px;
+           font-size:15px;
+           margin-top: 10px;
+        }
+        label{
+            color:aliceblue;
+            text-transform: uppercase;
+            font-family: monospace;
+        }
+        form{
+            width: 40%;
+            height: 20%;
+        }
+        button{
+            width: 30%;
+            color: white;
+            background-color: rgb(1, 4, 30);
+            padding:10px;
+            font-size: 20px;
+            border-radius: 3px;
+            border:none;
+            margin-top: 10px;
+
+
+        }
+        button:hover{
+            background-color: rgb(22, 24, 47) ;
+            font-size:30px;  
+        }
+        button:focus{
+            background-color: green;
+        }
+        @media screen and (max-width: 500px){
+            
+        }
+        @media only screen and (max-width:900px) and (min-width:501px){
+        }
+    </style>
+</head>
+<body>
+    <h1>Edit blog</h1>
+<center>
+    <form action="#">
+     <label for="blog-Title">Blog Title</label><br>
+     <input type="text" placeholder="Edit title" id="blog-title"> 
+     <label for="blog-Title">Blog Summary</label><br>
+     <input type="text" placeholder="Edit blogsummary" id="blog-summary">
+     <label for="">Blog content</label><br>
+     <textarea id="blog-content"> </textarea> 
+     <!-- <input type="file"><br>  -->
+     <button type="button" onclick="saveBlog()">Save</button>
+     
+    </form>
+</center>
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/froala-editor@latest/js/froala_editor.pkgd.min.js"></script> 
+<script>
+let editor = new FroalaEditor('#blog-content', {
+  heightMax:200,
+  outerHeight:0 
+}) 
+</script>
+<script src="edit.js"></script>
+</body>
+</html>

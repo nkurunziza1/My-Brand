@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Brand</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/froala-editor@latest/css/froala_editor.pkgd.min.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body>
+    <div class="admin-log">
+        <img src="/imge&icon/admin-logo.png" alt="">
+        <h1 style="color: rgb(223, 222, 220);">DASHBOARD</h1>
+    </div>
+    <div class="admin-content" id="admin-content">
+        <div class="content">
+            <a href="usermessage.html">User</a>
+            <a href="comment.html">Comments</a>
+            <a href="admincontrol.html">Blog control</a>
+        </div>
+    </div>
+    <div class="admin-cover">
+        <div class="admin-discript">
+            <p>Admin-Panel</p>
+            <img src="/imge&icon/open-menu.png" alt="" id="admin-open">
+        </div>
+        <div class="admin-panel">
+            <div class="admin-form">
+                <p id="admin-blog-message"></p>
+                <form action="#">
+                    <label for="">Blog Title</label>
+                    <input type="text" id="blog-titleInput">
+                     <label for="">Blog summary</label>
+                    <input type="text" id="blog-summaryInput">
+                    <label for="">Blog Content</label>
+                    <textarea id="content" name=""></textarea>
+                </form>
+            </div>
+            <div class="upload-img">
+                <input type="file" name="" id="blog-imageChoose-input"><br>
+   
+            </div>
+            <button class="admin-submit-button" id="admin-submit-button">Submit</button>
+        </div>
+    </div>
+    <!-- <script src="index.js"></script> -->
+    <script src="admin.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/froala-editor@latest/js/froala_editor.pkgd.min.js"></script> 
+     <script>
+     let editor = new FroalaEditor('#content', {
+        heightMax:200
+     })
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,53 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> login page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="main-content">
+    <div class="logo"><span class="N">N</span><span class="A">A</span>classicDev</div>
+    <div class="open"><img src="/imge&icon/open-menu.png" alt="" id="open"></div>
+     <div class="menu"  id="menu">
+        <ul class="unOrdered-list">
+          <li><a href="index.html">Home</a></li> 
+          <li><a href="about.html" >About</a></li> 
+          <li><a href="skill.html">Skills</a></li> 
+          <li><a href="portifolio.html">Portifolio</a></li> 
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contacts</a></li>
+          <li><a href="login.html" class="passive">Login</a></li>  
+        </ul>   
+     </div>
+</div>
+ <div class="login">
+    <div class="login-page">
+        <div class="login-content" >
+      <p>Please Login for more information</p>
+      <p>Don't have an account click <span> <a href="signup.html" style="color: red; text-decoration: none;"
+        >here</a> </span> </p>
+        </div>
+        <div class="login-form">
+          <span id="login-message"></span>
+       <form>
+        <label for="">Email</label>
+        <input type="email" name="" id="email"autocomplete="off"><br>
+        <label for="">Password</label>
+        <input type="password" name="" id="password" autocomplete="off">
+        <button onclick="login()" type="button">Login</button>
+       </form>
+        </div>
+    </div>
+</div>
+<div class="ending-description">
+  <footer>copy&copyright</footer>
+  <p>Designed and developed by Nkurunziza Alexandre</p>
+ </div> 
+<script src="login.js"></script>
+</body>
+</html>

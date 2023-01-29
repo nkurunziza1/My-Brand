@@ -1,0 +1,22 @@
+{
+  "name": "my-brand",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nkurunziza1/My-Brand.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nkurunziza1/My-Brand/issues"
+  },
+  "homepage": "https://github.com/nkurunziza1/My-Brand#readme",
+  "dependencies": {
+    "froala-editor": "^4.0.17"
+  }
+}

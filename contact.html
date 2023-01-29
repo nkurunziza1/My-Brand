@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+<link rel="html" href="usermessage.html">
+<!-- <link href="https://cdn.jsdelivr.net/npm/froala-editor@latest/css/froala_editor.pkgd.min.css" rel="stylesheet" type="text/css" /> -->
+</head>
+<body>
+  <div class="main-content">
+    <div class="logo"><span class="N">N</span><span class="A">A</span>classicDev</div>
+    <div class="open"><img src="/imge&icon/open-menu.png" alt="" id="open"></div>
+     <div class="menu"  id="menu">
+        <ul class="unOrdered-list">
+          <li><a href="index.html" class="active">Home</a></li> 
+          <li><a href="about.html" >About</a></li> 
+          <li><a href="skill.html">Skills</a></li> 
+          <li><a href="portifolio.html">Portifolio</a></li> 
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html" class="passive">Contacts</a></li>
+          <li><a href="login.html">Login</a></li>  
+        </ul>   
+     </div>
+</div>
+  <div class="head1">
+    <div class="main3-content" >
+        <div class="contact-form">
+          <form action="#">
+          <h3 style="font-size:18px; text-align: center;" >Send me an Email </h3>
+          <label>Name:</label>
+          <input type="text"  id="contact-nameInput" placeholder="Enter your name"><br>
+          <span id="signup-name-error"></span>
+           <label>Email:</label>
+          <input  type="email"  id="contact-emailInput" placeholder="Type your email here"><br>
+          <span id="signup-email-error"></span>
+          <label for="" >Message</label>
+          <textarea   id="contact-textarea"></textarea> <br>
+          <span id="signup-textarea-error"></span> <br>
+          <button id="contact-btn">Send</button>
+        </form>
+    </div>
+  </div>
+  <div class="contact-info" >
+    <table border="2px " id="contact-info" width="300px">
+     
+    </table>
+    <h3 style="margin-bottom: 10px; font-size: 18px;">Contact Info. </h3>
+    <p style="font-size: 15px;">Get in touch with via on social media</p>
+    
+        <img src="/imge&icon/owner-image.JPG" alt=""  class="contact-owner-img">
+</div>
+    </div>
+    <div class="whatsapp-facebook">
+      <a href="" id="whatsapp"><img src="/imge&icon/green-watsap.png" 
+       style="width: 40px;height: 40px; "></a> 
+      <a href="" id="facebook"><img src="/imge&icon/blue-facebook.png" 
+       style="width: 40px;height: 40px;"></a> 
+     </div> 
+     <div class="ending-description">
+      <footer>copy&copyright</footer>
+      <p>Designed and developed by Nkurunziza Alexandre</p>
+     </div>  
+    <!-- <script  src="index.js"></script>  -->
+    <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/froala-editor@latest/js/froala_editor.pkgd.min.js"></script> -->
+    <script src="contact.js"></script>
+    <!-- <script>
+      let editor = new FroalaEditor("#contact-textarea");
+    </script> -->
+</body>
+</html>
