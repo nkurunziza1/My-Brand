@@ -151,7 +151,7 @@
  *       404:
  *         description: Not Found
  */
-  blogRouter.patch("/:id",passport.authenticate('jwt', {session: false}),updateBlog)
+  blogRouter.patch("/:id", updateBlog)
 
 /**
  * @swagger
