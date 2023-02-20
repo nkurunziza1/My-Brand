@@ -95,7 +95,7 @@
  /**
  * @swagger
  * /api/v1/blogs/{id}:
- *   put:
+ *   patch:
  *     tags:
  *       - blogs
  *     summary: Update blog by id
@@ -151,7 +151,7 @@
  *       404:
  *         description: Not Found
  */
-  blogRouter.put("/:id",passport.authenticate('jwt', {session: false}),updateBlog)
+  blogRouter.patch("/:id",passport.authenticate('jwt', {session: false}),updateBlog)
 
 /**
  * @swagger

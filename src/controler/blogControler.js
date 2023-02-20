@@ -91,6 +91,7 @@
     const updateBlog = async (req, res) => {
     try {
     const blog = await Blog.findOne({ _id: req.params.id });
+    console.log(blog)
     if (!blog) {
         return res.status(404).json({message:"Blog not found!"});
     }
