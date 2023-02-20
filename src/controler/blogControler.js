@@ -81,7 +81,12 @@
     if (!blog) {
     res.status(404).json({message:"Post not found"});
     } else {
-    res.json(blog);
+    res.json({
+      ...blog._doc,
+      commentCount: await commentSchema.find({
+        blog: req.params.id
+      }).count()
+    });
     }
     } catch (error) {
     res.status(404).json({message:"Post not found"});
