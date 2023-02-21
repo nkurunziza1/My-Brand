@@ -27,7 +27,20 @@ const options = {
         {
           url: 'https://alexandre-nkurunziza.onrender.com/'
         }
-      ]
+
+      ],
+
+      
+      components: {
+        securitySchemes: {
+          bearerAuth: {
+            type: "http",
+            scheme: "bearer",
+            bearerFormat: "JWT",
+          },
+        },
+      },
+      
   },
   apis:['./src/routes/*.js']
     }
