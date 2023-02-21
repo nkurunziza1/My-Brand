@@ -134,6 +134,8 @@
  * /api/v1/messages/{id}:
  *   delete:
  *     summary: Delete a message by ID
+ *     security: 
+ *       - bearerAuth: []
  *     tags:
  *       - messages
  *     parameters:

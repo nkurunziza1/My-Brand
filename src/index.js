@@ -13,13 +13,26 @@
    import { signupSchema } from "./models/signup.js";
    import swaggerDocs from '../swagger.js'
    import cors from "cors"
+   
+//    import { Swaggiffy } from 'swaggiffy'; 
+//    import { registerSchema} from 'swaggiffy';
 
-//    import likeRouter from "./routes/likeRouter.js";
+   
+
+
+// registerSchema('Blog', schema); 
+// registerSchema('Comment', schema, { orm: 'mongoose' }); 
+// registerSchema('messages', schema, { orm: 'mongoose' });
+
+
+
+
    const app = express();
    set('strictQuery', true)
 	.connect("mongodb+srv://nkurunziza1:DPW3F9J24i7kfTuP@cluster0.9ithra2.mongodb.net/blogs?retryWrites=true&w=majority", { useNewUrlParser: true })
 	.then(() => {
 		app.use(cors({}))
+		//new Swaggiffy().setupExpress(app).swaggiffy();
 		app.use(bodyParser.json({
 			limit:"50mb"
 		}));

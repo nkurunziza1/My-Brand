@@ -181,6 +181,8 @@
  *     tags:
  *       - comments
  *     summary: Delete a comment by ID
+ *     security: 
+ *       - bearerAuth: []
  *     parameters:
  *       - name: id
  *         in: path
