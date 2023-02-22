@@ -92,7 +92,7 @@
  *        
  */
 
-  blogRouter.post("",uploadImage.single('image'), postBlog)
+  blogRouter.post("",passport.authenticate('jwt', {session: false}),uploadImage.single('image'), postBlog)
 
  /**
  * @swagger
@@ -155,7 +155,7 @@
  *       404:
  *         description: Not Found
  */
-  blogRouter.patch("/:id", updateBlog)
+  blogRouter.patch("/:id",passport.authenticate('jwt', {session: false}), updateBlog)
  
 /**
  * @swagger
