@@ -57,7 +57,7 @@
  *     requestBody:
  *      required: true
  *      content:
- *        application/json:
+ *        multipart/form-data:
  *           schema:
  *            type: object
  *            required:
@@ -78,8 +78,8 @@
  *                type: string
  *                default: lionel messi have got 500 million dollars
  *              image:
- *                type: file
- *                default: alex.jpg
+ *                type: string
+ *                format: binary
  *     responses:
  *      200:
  *        description: (blog)
